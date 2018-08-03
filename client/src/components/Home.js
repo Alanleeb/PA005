@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import { Header, Image } from 'semantic-ui-react';
+import { Header, Image, Segment, Input, Label, Divider } from 'semantic-ui-react';
 import styled from 'styled-components';
+import BaraintreeDrop from './BraintreeDrop';
 
 class Home extends Component {
-  render() {
-    return (
-      <Header as='h1' textAlign='center'>Home Component</Header>
 
+  render() {
+
+    return (
+      <Segment basic textAlign='center'>
+        <Header as='h1' textAlign='center'>HOME</Header>
+      </Segment>
     );
   }
 }

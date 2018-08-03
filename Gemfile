@@ -28,8 +28,10 @@ gem 'puma', '~> 3.7'
 gem 'omniauth'
 gem 'devise'
 gem 'devise_token_auth'
-group :development, :test do
+gem 'braintree'
 
+group :development, :test do
+  gem 'dotenv-rails'
   gem 'pry'
 end
 
