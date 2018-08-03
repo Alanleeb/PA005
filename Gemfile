@@ -29,6 +29,8 @@ gem 'omniauth'
 gem 'devise'
 gem 'devise_token_auth'
 gem 'braintree'
+gem 'geocoder'
+gem 'cloudinary'
 
 group :development, :test do
   gem 'dotenv-rails'
@@ -44,3 +46,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+

@@ -11,6 +11,9 @@ import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
 import Landing from './Landing';
 import Packages from './Packages';
+import AdminHome from './AdminHome';
+import Photos from './Photos';
+import Galleries from './Galleries'
 
 class App extends Component {
   render() {
@@ -23,6 +26,9 @@ class App extends Component {
             <Route exact path='/' component={Landing} />
             <Route exact path='/home' component={Home} />
             <Route exect path='/packages' component={Packages} />
+            <Route exact path='/photos' component={Photos} />
+            <Route exact path='/galleries' component={Galleries} />
+            <ProtectedRoute exact path='/adminhome' component={AdminHome} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />
