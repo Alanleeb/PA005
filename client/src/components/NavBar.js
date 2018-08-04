@@ -12,6 +12,12 @@ class NavBar extends Component {
     if (user.id) {
       return (
         <Menu.Menu position='right'>
+        <Link to='/packages'>
+          <Menu.Item name='Packages' />
+        </Link>
+        <Link to='/photos'>
+            <Menu.Item name='Photos' />
+        </Link>
           <Menu.Item
             name='Logout'
             onClick={() => dispatch(handleLogout(history))}
@@ -30,9 +36,6 @@ class NavBar extends Component {
         <Link to='/login'>
           <Menu.Item name='Login' />
         </Link>
-        <Link to='/photos'>
-            <Menu.Item name='Photos' />
-          </Link>
       </Menu.Menu>
     );
   }
@@ -42,6 +45,9 @@ class NavBar extends Component {
       <div>
         <Menu pointing secondary>
         <StyledLink to="/" > LOGO </StyledLink>
+        <Link to='/adminhome'>
+          <Menu.Item name='Dashboard' />
+        </Link>
           { this.rightNavs() }
         </Menu>
       </div>
@@ -54,6 +60,8 @@ const mapStateToProps = state => {
 };
 
 const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;
   color: black;
   font-size: 25px;
   font-weight: bold;
