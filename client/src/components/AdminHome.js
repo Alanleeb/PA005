@@ -63,7 +63,6 @@ class AdminHome extends Component {
           </Dropzone>
         }
         <Segment basic>
-          <Header as='h2'>The Clouds Photos</Header>
           <Divider />
           <Grid>
             <Grid.Row>
