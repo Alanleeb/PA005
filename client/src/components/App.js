@@ -26,7 +26,7 @@ class App extends Component {
             <Route exact path='/home' component={Home} />
             <Route exect path='/packages' component={Packages} />
             <Route exact path='/galleries' component={Galleries} />
-            <ProtectedRoute exact path='/adminhome' component={AdminHome} />
+            <Route exact path='/adminhome' component={AdminHome} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />
