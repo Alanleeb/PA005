@@ -6,7 +6,6 @@ class CreateClients < ActiveRecord::Migration[5.1]
       t.string :shoot_type
       t.string :locaton
       t.string :notes
-      t.users :belongs_to
 
       t.timestamps
     end
